@@ -18,6 +18,7 @@
 
 <script>
   var gitalk = new Gitalk({
+    title: document.title.substr(0, document.title.lastIndexOf(' | ')),//DIY: gitalk issue title.
     clientID: '{{ theme.gitalk.client_id }}',
     clientSecret: '{{ theme.gitalk.client_secret }}',
     repo: '{{ theme.gitalk.repo }}',
